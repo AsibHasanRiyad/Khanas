@@ -19,7 +19,11 @@ module.exports = withMT({
       },
     },
     colors: {
-      primary: "#CC3233",
+      primary: "#92172E",
+      secondary: "#2B425D",
+    },
+    fontFamily: {
+      caveat: ["Caveat", "cursive"],
     },
     extend: {
       keyframes: {

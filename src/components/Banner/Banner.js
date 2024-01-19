@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@material-tailwind/react";
+import Title from "../Shared/Title/Title";
 
 function Banner() {
   return (
@@ -11,7 +12,7 @@ function Banner() {
           ENJOY OUR <br /> CHICKEN <span className="text-primary">BURGER</span>{" "}
           <br /> FAST FOOD
         </h1>
-        <p className="text-[#2B425D]  font-bold text-2xl pt-4">
+        <p className="text-[#2B425D] font-caveat  font-extrabold text-2xl pt-4">
           Bet You can&apos;t eat less
         </p>
         <div className=" mt-6">

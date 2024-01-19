@@ -206,7 +206,7 @@ function NavList() {
           </div>
           <div className=" text-lg font-bold">
             <h1>Delivery Order</h1>
-            <h1 className="text-[#CC3233]">123-59794069</h1>
+            <h1 className="text-primary">123-59794069</h1>
           </div>
         </ListItem>
       </Typography>
@@ -231,15 +231,24 @@ export function NavbarWithMegaMenu() {
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-[#CC3233] text-3xl font-bold"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-primary text-3xl font-extrabold flex justify-center items-center"
         >
-          Khana&apos;s
+          <Image
+            src={
+              "https://i.ibb.co/jL4BMKk/362274384-593661016265706-7554991896499251875-n.png"
+            }
+            alt="logo"
+            height={100}
+            width={100}
+            className=" h-16 w-16"
+          ></Image>
+          <h1 className=" font-caveat">Khana&apos;s</h1>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button className=" bg-[#CC3233]" size="lg">
+          <Button className=" bg-primary" size="lg">
             <Link href={"/signIN"}>Sign In</Link>
           </Button>
         </div>
