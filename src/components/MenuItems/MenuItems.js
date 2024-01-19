@@ -9,109 +9,72 @@ const MenuItems = () => {
       {/* Menu item */}
       {/* Will change later by data map */}
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
+        {/* 1 */}
         <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
             height={150}
             width={150}
+            className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
+            <h1 className=" text-lg lg:text-2xl font-bold hover:text-primary">
               Chicken Burger
             </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
+            <p className=" text-base lg:text-lg">Shirmp. Squid, Pineapple</p>
+            <p className=" text-lg lg:text-2xl font-bold">Price: $ 10.00</p>
           </div>
         </div>
+        {/* 1 */}
         <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
             height={150}
             width={150}
+            className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
+            <h1 className=" text-lg lg:text-2xl font-bold hover:text-primary">
               Chicken Burger
             </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
+            <p className=" text-base lg:text-lg">Shirmp. Squid, Pineapple</p>
+            <p className=" text-lg lg:text-2xl font-bold">Price: $ 10.00</p>
           </div>
         </div>
+        {/* 1 */}
         <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
             height={150}
             width={150}
+            className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
+            <h1 className=" text-lg lg:text-2xl font-bold hover:text-primary">
               Chicken Burger
             </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
+            <p className=" text-base lg:text-lg">Shirmp. Squid, Pineapple</p>
+            <p className=" text-lg lg:text-2xl font-bold">Price: $ 10.00</p>
           </div>
         </div>
+        {/* 1 */}
         <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
             height={150}
             width={150}
+            className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
+            <h1 className=" text-lg lg:text-2xl font-bold hover:text-primary">
               Chicken Burger
             </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
-          </div>
-        </div>
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
-          <Image
-            src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
-            alt="food"
-            height={150}
-            width={150}
-          />
-          <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
-              Chicken Burger
-            </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
-          </div>
-        </div>
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
-          <Image
-            src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
-            alt="food"
-            height={150}
-            width={150}
-          />
-          <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
-              Chicken Burger
-            </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
-          </div>
-        </div>
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
-          <Image
-            src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
-            alt="food"
-            height={150}
-            width={150}
-          />
-          <div>
-            <h1 className=" text-2xl font-bold hover:text-primary">
-              Chicken Burger
-            </h1>
-            <p className=" text-lg">Shirmp. Squid, Pineapple</p>
-            <p className=" text-2xl font-bold">Price: $ 10.00</p>
+            <p className=" text-base lg:text-lg">Shirmp. Squid, Pineapple</p>
+            <p className=" text-lg lg:text-2xl font-bold">Price: $ 10.00</p>
           </div>
         </div>
       </div>
