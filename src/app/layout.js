@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={open_sans.className}>
-        <main className=" max-w-[1920px] mx-auto">{children}</main>
+        <main className=" max-w-[1920px] mx-auto ">{children}</main>
       </body>
     </html>
   );

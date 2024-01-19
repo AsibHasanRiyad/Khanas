@@ -29,6 +29,8 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import Image from "next/image";
 
 const navListMenuItems = [
   {
@@ -60,21 +62,6 @@ const navListMenuItems = [
     title: "Contact",
     description: "Find the perfect solution for your needs.",
     icon: PhoneIcon,
-  },
-  {
-    title: "News",
-    description: "Read insightful articles, tips, and expert opinions.",
-    icon: NewspaperIcon,
-  },
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: RectangleGroupIcon,
-  },
-  {
-    title: "Special Offers",
-    description: "Explore limited-time deals and bundles",
-    icon: TagIcon,
   },
 ];
 
@@ -133,23 +120,25 @@ function NavListMenu() {
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Menu
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-              <ChevronDownIcon
-                strokeWidth={2.5}
-                className={`block h-3 w-3 transition-transform lg:hidden ${
-                  isMobileMenuOpen ? "rotate-180" : ""
-                }`}
-              />
+              <div className=" hidden lg:block">
+                <ChevronDownIcon
+                  strokeWidth={2.5}
+                  className={`hidden h-3 w-3 transition-transform lg:block ${
+                    isMenuOpen ? "rotate-180" : ""
+                  }`}
+                />
+                <ChevronDownIcon
+                  strokeWidth={2.5}
+                  className={`block h-3 w-3 transition-transform lg:hidden ${
+                    isMobileMenuOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
             </ListItem>
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+          <ul className="grid grid-cols-2 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
         </MenuList>
@@ -163,7 +152,7 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 flex items-center">
       <Typography
         as="a"
         href="#"
@@ -172,7 +161,7 @@ function NavList() {
         className="font-semibold text-lg"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-[#CC3233]">
-          Home
+          <Link href={"/"}>Home</Link>
         </ListItem>
       </Typography>
       <NavListMenu />
@@ -184,7 +173,7 @@ function NavList() {
         className="font-semibold text-lg"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-[#CC3233]">
-          About Us
+          <Link href={"/aboutUs"}>About Us</Link>
         </ListItem>
       </Typography>
       <Typography
@@ -195,7 +184,30 @@ function NavList() {
         className="font-semibold text-lg"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-[#CC3233]">
-          Contact
+          <Link href={"/contact"}>Contact</Link>
+        </ListItem>
+      </Typography>
+      <Typography
+        as="a"
+        href="#"
+        variant="small"
+        color="blue-gray"
+        className="font-semibold text-lg"
+      >
+        <ListItem className="flex items-center gap-4 py-2 pr-4 hover:text-[#CC3233]">
+          <div>
+            <Image
+              src={"https://i.ibb.co/0CVC6qY/1.png"}
+              height={200}
+              width={200}
+              alt="Delivery"
+              className=" h-10 w-10"
+            ></Image>
+          </div>
+          <div className=" text-lg font-bold">
+            <h1>Delivery Order</h1>
+            <h1 className="text-[#CC3233]">123-59794069</h1>
+          </div>
         </ListItem>
       </Typography>
     </List>
@@ -213,13 +225,13 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="mx-auto rounded-none max-w-full px-4 md:px-8 lg:px-14 py-2">
+    <Navbar className="mx-auto rounded-none max-w-full px-4 md:px-8 lg:px-14 py-2 lg:py-0">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-[#CC3233] text-3xl font-bold"
         >
           Khana&apos;s
         </Typography>
@@ -228,7 +240,7 @@ export function NavbarWithMegaMenu() {
         </div>
         <div className="hidden gap-2 lg:flex">
           <Button className=" bg-[#CC3233]" size="lg">
-            Sign In check
+            <Link href={"/signIN"}>Sign In</Link>
           </Button>
         </div>
         <IconButton
@@ -247,8 +259,8 @@ export function NavbarWithMegaMenu() {
       <Collapse open={openNav}>
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button className=" bg-[#CC3233]" size="sm" fullWidth>
-            Sign In
+          <Button className=" bg-[#CC3233]" size="md" fullWidth>
+            <Link href={"/signIN"}>Sign In</Link>
           </Button>
         </div>
       </Collapse>

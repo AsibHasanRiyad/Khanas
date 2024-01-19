@@ -18,6 +18,9 @@ module.exports = withMT({
         "2xl": "1400px",
       },
     },
+    colors: {
+      primary: "#CC3233",
+    },
     extend: {
       keyframes: {
         "accordion-down": {
