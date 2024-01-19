@@ -7,7 +7,7 @@ const Home = () => {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
       pariatur molestias obcaecati quasi ex. Sequi harum sapiente quibusdam ad?
       Itaque odio perferendis debitis repellat maxime ipsa, illo velit! Amet,
-      dolorum.
+      dolorum.lorem
       <Navbar />
     </div>
   );
