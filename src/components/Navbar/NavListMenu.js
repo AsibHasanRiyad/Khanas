@@ -228,7 +228,7 @@ export function NavbarWithMegaMenu() {
         </div>
         <div className="hidden gap-2 lg:flex">
           <Button className=" bg-[#CC3233]" size="lg">
-            Sign In
+            Sign In check
           </Button>
         </div>
         <IconButton
