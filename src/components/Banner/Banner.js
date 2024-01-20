@@ -5,7 +5,7 @@ import { Button } from "@material-tailwind/react";
 
 function Banner() {
   return (
-    <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 justify-center items-center py-10 md:py-5 lg:py-20 gap-5 lg:gap-10 bg-[#FFF8EE] px-4 md:px-8 lg:px-14 ">
+    <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 justify-center items-center py-5 lg:py-20 gap-5 lg:gap-10 bg-[#FFF8EE] px-4 md:px-8 lg:px-14 ">
       <div>
         <h1 className=" text-5xl lg:text-7xl font-extrabold text-[#2B425D] leading-[55px] lg:leading-[85px]">
           ENJOY OUR <br /> CHICKEN <span className="text-primary">BURGER</span>{" "}
@@ -57,7 +57,7 @@ function Banner() {
       </div>
       {/* middle */}
 
-      <div className="animate-moveContinuously hidden lg:block absolute top-20 left-[40%] z-0">
+      <div className="animate-moveContinuously hidden md:block absolute top-0 lg:top-20 left-[50%] lg:left-[40%] z-0">
         <Image
           src="https://i.ibb.co/1fjkwh6/t-slice.png"
           height={100}
@@ -65,7 +65,7 @@ function Banner() {
           alt=""
         />
       </div>
-      <div className="animate-moveContinuously hidden lg:block absolute bottom-40 left-[40%] z-0 ">
+      <div className="animate-moveContinuously hidden md:block absolute bottom-10 lg:bottom-40 left-[40%] z-0 ">
         <Image
           src="https://i.ibb.co/kgrJnSf/113.png"
           height={130}

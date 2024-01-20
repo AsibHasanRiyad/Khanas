@@ -21,7 +21,8 @@ const Footer = () => {
 
   const currentYear = new Date().getFullYear();
   return (
-    <div className="px-4 md:px-8 lg:px-14 py-10">
+    <div className="px-4 md:px-8 lg:px-14 pt-10">
+      <hr className=" py-5" />
       <footer className="relative w-full">
         <div>
           <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-3">
@@ -87,7 +88,7 @@ const Footer = () => {
                 className="opacity-80 transition-opacity hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-10 w-10"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -105,7 +106,7 @@ const Footer = () => {
                 className="opacity-80 transition-opacity hover:opacity-100"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-10 w-10"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -119,6 +120,34 @@ const Footer = () => {
               </Typography>
             </div>
           </div>
+        </div>
+
+        {/* background image */}
+        {/* bottom right */}
+        <div className=" hidden lg:block absolute bottom-0 -right-10 -z-20">
+          <Image
+            src="https://i.ibb.co/mX9vfd3/41.png"
+            height={150}
+            width={150}
+            alt=""
+          />
+        </div>
+        {/* middle */}
+        <div className="animate-moveContinuously block absolute bottom-10 lg:bottom-40 left-[40%] z-0 ">
+          <Image
+            src="https://i.ibb.co/D9Gs9sr/scatter.png"
+            height={180}
+            width={180}
+            alt=""
+          />
+        </div>
+        <div className="animate-moveContinuously hidden lg:block absolute bottom-20 right-[25%] z-0 ">
+          <Image
+            src="https://i.ibb.co/2twr9Y2/layer.png"
+            height={130}
+            width={130}
+            alt=""
+          />
         </div>
       </footer>
     </div>

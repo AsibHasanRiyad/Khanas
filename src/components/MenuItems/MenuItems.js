@@ -10,12 +10,12 @@ const MenuItems = () => {
       {/* Will change later by data map */}
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
         {/* 1 */}
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
+        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-105 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
-            height={150}
-            width={150}
+            height={100}
+            width={100}
             className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
@@ -27,12 +27,12 @@ const MenuItems = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
+        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-105 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
-            height={150}
-            width={150}
+            height={100}
+            width={100}
             className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
@@ -44,12 +44,12 @@ const MenuItems = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
+        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-105 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
-            height={150}
-            width={150}
+            height={100}
+            width={100}
             className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
@@ -61,12 +61,12 @@ const MenuItems = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-110 duration-300">
+        <div className=" flex justify-center items-center gap-10 cursor-pointer hover:shadow-md p-4 rounded-md hover:scale-105 duration-300">
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
-            height={150}
-            width={150}
+            height={100}
+            width={100}
             className=" w-20 h-20 lg:w-32 lg:h-32"
           />
           <div>
