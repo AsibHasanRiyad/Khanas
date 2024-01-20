@@ -225,24 +225,24 @@ export function NavbarWithMegaMenu() {
   }, []);
 
   return (
-    <Navbar className="mx-auto rounded-none max-w-full px-4 md:px-8 lg:px-14 py-2 lg:py-0">
+    <Navbar className="mx-auto rounded-none max-w-full px-4 md:px-8 lg:px-14 py-2 lg:py-0 bg-[#FFF8EE] ">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-primary text-3xl font-extrabold flex justify-center items-center"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-primary text-4xl font-extrabold flex justify-center items-center"
         >
           <Image
             src={
-              "https://i.ibb.co/jL4BMKk/362274384-593661016265706-7554991896499251875-n.png"
+              "https://i.ibb.co/jMnTMtP/362274384-593661016265706-7554991896499251875-n-1.png"
             }
             alt="logo"
             height={100}
             width={100}
             className=" h-16 w-16"
           ></Image>
-          <h1 className=" font-caveat">Khana&apos;s</h1>
+          <h1 className=" font-caveat ml-3">Khana&apos;s</h1>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
@@ -269,7 +269,7 @@ export function NavbarWithMegaMenu() {
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
           <Button className=" bg-[#CC3233]" size="md" fullWidth>
-            <Link href={"/signIN"}>Sign In</Link>
+            <Link href={"/signin"}>Sign In</Link>
           </Button>
         </div>
       </Collapse>
