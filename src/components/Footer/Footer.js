@@ -32,15 +32,17 @@ const Footer = () => {
               variant="h6"
               className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-primary text-3xl font-extrabold"
             >
-              <Image
-                src={
-                  "https://i.ibb.co/jMnTMtP/362274384-593661016265706-7554991896499251875-n-1.png"
-                }
-                alt="logo"
-                height={100}
-                width={100}
-                className=" h-32 w-32"
-              ></Image>
+              <div className=" flex justify-center items-center">
+                <Image
+                  src={
+                    "https://i.ibb.co/jMnTMtP/362274384-593661016265706-7554991896499251875-n-1.png"
+                  }
+                  alt="logo"
+                  height={100}
+                  width={100}
+                  className=" h-32 w-32"
+                ></Image>
+              </div>
               {/* <h1 className=" text-6xl font-caveat">Khana&apos;s</h1> */}
             </Typography>
             <div className=" col-span-2 grid grid-cols-3 justify-between gap-4">
