@@ -112,7 +112,7 @@ function NavListMenu() {
           <Typography
             as="div"
             variant="small"
-            className="font-semibold text-lg"
+            className="text-lg font-semibold"
           >
             <ListItem
               className="flex items-center justify-center gap-2 py-1.5 pr-4 font-semibold text-gray-900 text-lg hover:text-[#CC3233]"
@@ -120,7 +120,7 @@ function NavListMenu() {
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Menu
-              <div className=" hidden lg:block">
+              <div className="hidden  lg:block">
                 <ChevronDownIcon
                   strokeWidth={2.5}
                   className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -138,7 +138,7 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-2 gap-y-2 outline-none outline-0">
+          <ul className="grid grid-cols-2 outline-none gap-y-2 outline-0">
             {renderItems}
           </ul>
         </MenuList>
@@ -152,13 +152,13 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 flex items-center">
+    <List className="flex items-center p-0 mt-4 mb-6 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
         as="a"
         href="#"
         variant="small"
         color="blue-gray"
-        className="font-semibold text-lg"
+        className="text-lg font-semibold"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-[#CC3233]">
           <Link href={"/"}>Home</Link>
@@ -170,7 +170,7 @@ function NavList() {
         href="#"
         variant="small"
         color="blue-gray"
-        className="font-semibold text-lg"
+        className="text-lg font-semibold"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-[#CC3233]">
           <Link href={"/aboutUs"}>About Us</Link>
@@ -181,7 +181,7 @@ function NavList() {
         href="#"
         variant="small"
         color="blue-gray"
-        className="font-semibold text-lg"
+        className="text-lg font-semibold"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-[#CC3233]">
           <Link href={"/contact"}>Contact</Link>
@@ -192,7 +192,7 @@ function NavList() {
         href="#"
         variant="small"
         color="blue-gray"
-        className="font-semibold text-lg"
+        className="text-lg font-semibold"
       >
         <ListItem className="flex items-center gap-4 py-2 pr-4 hover:text-[#CC3233]">
           <div>
@@ -201,10 +201,10 @@ function NavList() {
               height={200}
               width={200}
               alt="Delivery"
-              className=" h-10 w-10"
+              className="w-10 h-10 "
             ></Image>
           </div>
-          <div className=" text-lg font-bold">
+          <div className="text-lg font-bold ">
             <h1>Delivery Order</h1>
             <h1 className="text-primary">123-59794069</h1>
           </div>
@@ -240,16 +240,16 @@ export function NavbarWithMegaMenu() {
             alt="logo"
             height={100}
             width={100}
-            className=" h-16 w-16"
+            className="w-16 h-16 "
           ></Image>
-          <h1 className=" font-caveat ml-3">Khana&apos;s</h1>
+          <h1 className="ml-3  font-caveat">Khana&apos;s</h1>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
           <Button className=" bg-primary" size="lg">
-            <Link href={"/signIN"}>Sign In</Link>
+            <Link href={"/signin"}>Sign In</Link>
           </Button>
         </div>
         <IconButton
@@ -259,15 +259,15 @@ export function NavbarWithMegaMenu() {
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            <XMarkIcon className="w-6 h-6" strokeWidth={2} />
           ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            <Bars3Icon className="w-6 h-6" strokeWidth={2} />
           )}
         </IconButton>
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+        <div className="flex items-center w-full gap-2 flex-nowrap lg:hidden">
           <Button className=" bg-[#CC3233]" size="md" fullWidth>
             <Link href={"/signin"}>Sign In</Link>
           </Button>

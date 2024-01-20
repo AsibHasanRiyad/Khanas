@@ -9,6 +9,7 @@ export const metadata = {
   title: "Khana's",
   description: "Bet You Can't Eat Less",
 };
+<script>AOS.init();</script>;
 
 export default function RootLayout({ children }) {
   return (
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={open_sans.className}>
         <main className=" max-w-[1920px] mx-auto ">
           <NavbarWithMegaMenu />
-          <div className=" min-h-screen justify-center items-center">
+          <div className="items-center justify-center min-h-screen ">
             {children}
           </div>
           <Footer />
