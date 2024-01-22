@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const MenuItems = () => {
   return (
-    <div
-      data-aos="fade-right"
-      className="px-4 py-10 md:px-8 lg:px-14 text-secondary"
-    >
+    <div className="px-4 py-10 md:px-8 lg:px-14 text-secondary">
       <Title title1={"Food Items"} title2={"Popular"} title3={"Menu"} />
       {/* Menu item */}
       {/* Will change later by data map */}
       <div className="grid grid-cols-1 gap-10 my-10 md:grid-cols-2 lg:grid-cols-3">
         {/* 1 */}
-        <div className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-2xl hover:shadow-gray-300 hover:scale-105">
+        <div
+          data-aos="fade-right"
+          className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-2xl hover:shadow-gray-300 hover:scale-105"
+        >
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
@@ -30,7 +30,10 @@ const MenuItems = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-md hover:scale-105">
+        <div
+          data-aos="fade-right"
+          className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-md hover:scale-105"
+        >
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
@@ -47,7 +50,10 @@ const MenuItems = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-md hover:scale-105">
+        <div
+          data-aos="fade-right"
+          className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-md hover:scale-105"
+        >
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
@@ -64,7 +70,10 @@ const MenuItems = () => {
           </div>
         </div>
         {/* 1 */}
-        <div className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-md hover:scale-105">
+        <div
+          data-aos="fade-right"
+          className="flex items-center justify-center gap-10 p-4 duration-300 rounded-md cursor-pointer hover:shadow-md hover:scale-105"
+        >
           <Image
             src={"https://i.ibb.co/crgY6M1/burger-promo.png"}
             alt="food"
