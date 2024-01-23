@@ -34,12 +34,12 @@ import Image from "next/image";
 
 const navListMenuItems = [
   {
-    title: "Products",
+    title: "Burger",
     description: "Find the perfect solution for your needs.",
     icon: SquaresPlusIcon,
   },
   {
-    title: "About Us",
+    title: "Pizza",
     description: "Meet and learn about our dedication",
     icon: UserGroupIcon,
   },
@@ -120,7 +120,7 @@ function NavListMenu() {
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Menu
-              <div className="hidden  lg:block">
+              <div className="hidden lg:block">
                 <ChevronDownIcon
                   strokeWidth={2.5}
                   className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -137,7 +137,7 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+        <MenuList className="hidden max-w-screen-xl mt-1 rounded-xl lg:block">
           <ul className="grid grid-cols-2 outline-none gap-y-2 outline-0">
             {renderItems}
           </ul>
@@ -242,7 +242,7 @@ export function NavbarWithMegaMenu() {
             width={100}
             className="w-16 h-16 "
           ></Image>
-          <h1 className="ml-3  font-caveat">Khana&apos;s</h1>
+          <h1 className="ml-3 font-caveat">Khana&apos;s</h1>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
